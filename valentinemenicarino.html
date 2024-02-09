@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title> miao:33 </title>
+	<head>
+	<style> 
+		div{
+			text-align:center;
+			vertical-align:middle;
+			}
+		#image{
+			display:none;
+			}
+		p{
+			text-align:left;
+			font-family:verdana;
+			}
+		h1{
+			font-family:trebuchet ms;
+			text-align:middle;
+			}
+		#no{
+			position:absolute;
+			background-color:#FF6961;
+			font-size:100px;
+			border-radius:4px;
+			font-family:verdana;
+			outline:none;
+			}
+		#yesButton{
+			background-color:#77DD77;
+			font-size:100px;
+			border-radius:4px;
+			font-family:verdana;
+			}
+	</style>
+	<body bgcolor="#F8C8DC">
+		<div>
+			<p> <span title="kay yasmin lang to凸( •̀_•́ )凸"> for 雅思敏🦊 only </p>
+			<br><br><br><br>
+			<h1> <i> <span title="will u be my valentine yas?( ˊᵕˋ )♡.°⑅"> be my valentine plsplspls ⸜(｡˃ ᵕ ˂ )⸝♡ <i> 	</h1>
+			<button type="button" onclick="show()" id="yesButton"> oke </button>
+			<center> <img id="image" src="pompompurin-miikun.gif" /> <center>
+			<br>
+			<button id="no"> nah </button>
+			<center-left> <a href="https://open.spotify.com/track/09RamrocZneYcLYLRIxYha?si=04a8f4d728a24f52"> a song for u !!•ᴗ• </a> <center-left>
+		</div>
+		<script>
+				document.getElementById("yesButton").addEventListener("click", function()
+			{
+				alert("YAYYY LOVEYOUU<3333!!•ﻌ•ྀི");
+			});
+				var b = document.getElementById("no")
+				b.addEventListener("click", change);
+				function change()	{
+					var i = Math.floor(Math.random()*1000)+1;
+					var j = Math.floor(Math.random()*700)+1;
+					b.style.left = i+"px";
+					b.style.top = j+"px";
+			}
+			function show() {
+			/* Access image by id and change 
+			the display property to block*/
+			document.getElementById('image')
+				.style.display = "block";
+			document.getElementById('yesButton')
+				.style.display = "none";
+		}
+		</script>
+	</body>
+</html>
